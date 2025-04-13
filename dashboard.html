@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battle War Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <div class="user-info">
+        <h2>Welcome, <span id="username-display">Username</span></h2>
+        <p>Battle ID: <span id="user-id">#0000</span></p>
+      </div>
+      <div class="stats">
+        <div class="stat-box">
+          <span class="stat-value" id="user-clicks">0</span>
+          <span class="stat-label">Your Clicks</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-value" id="user-rank">-</span>
+          <span class="stat-label">Your Rank</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="battle-area">
+      <div class="war-container">
+        <button id="war-btn" class="war-button">WAR</button>
+        <div class="click-stats">
+          <div class="click-speed">
+            <span id="click-speed">0</span> clicks/sec
+          </div>
+          <div class="multiplier">
+            <span id="click-multiplier">1x</span> multiplier
+          </div>
+        </div>
+      </div>
+
+      <div class="boost-section">
+        <button id="boost-btn" class="boost-button">
+          <span class="boost-icon">⚡</span>
+          <span>10$ Permanent Boost (2x)</span>
+        </button>
+        <button id="ad-btn" class="ad-button">
+          <span class="ad-icon">📺</span>
+          <span>Watch Ad for 2x (10min)</span>
+        </button>
+      </div>
+    </main>
+
+    <section class="live-stats">
+      <h3>Live Battle Stats</h3>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" id="total-warriors">0</span>
+          <span class="stat-name">Total Warriors</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="live-clicks">0</span>
+          <span class="stat-name">Live Clicks</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="time-left">30d 0h</span>
+          <span class="stat-name">Until Reset</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="leaderboard-section">
+      <div class="section-header">
+        <h3>Top 100 Warriors</h3>
+        <span class="update-info">Updates every hour</span>
+      </div>
+      <ol id="leaderboard-list">
+        <li class="leaderboard-entry loading">Loading leaderboard...</li>
+      </ol>
+    </section>
+
+    <footer class="dashboard-footer">
+      <a href="rules.html" class="rules-link">Read Battle Rules</a>
+      <div class="sponsors">
+        <span>Sponsored By:</span>
+        <img src="images/pepsi.png" alt="Pepsi">
+        <img src="images/jazz.png" alt="Jazz">
+        <img src="images/easypaisa.png" alt="EasyPaisa">
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/env.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/leaderboard.js"></script>
+  <script src="js/ads.js"></script>
+</body>
+</html>
