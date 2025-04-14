@@ -1,3 +1,6 @@
+# Firebase and sensitive files
+/js/env.js
+
 # Compiled source #
 ###################
 *.com
