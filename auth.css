@@ -1,0 +1,80 @@
+/* auth.css - Login Page Specific */
+.login-container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  margin: 2rem auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.prize {
+  color: #f9ca24;
+  font-weight: bold;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5rem 0;
+}
+
+.sponsors img {
+  height: 40px;
+  filter: brightness(0) invert(1);
+}
+
+.auth-form {
+  margin: 1.5rem 0;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#start-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: bold;
+}
+
+#start-btn:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+}
+
+.trust-text {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.winners-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.error-message {
+  color: var(--danger-color);
+  margin-top: 1rem;
+  font-weight: bold;
+}
